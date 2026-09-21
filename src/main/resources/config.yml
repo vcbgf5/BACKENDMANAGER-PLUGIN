@@ -1,0 +1,7 @@
+# Awaryjny transport dla banmanager:control, gdy na tym serwerze nie ma ani jednego gracza -
+# zwykly plugin messaging wymaga polaczenia gracza jako transportu, wiec bez niego np. realny
+# SHUTDOWN wydany na pustym serwerze nigdy by nie dotarl. Proxy wtedy laczy sie wprost gniazdem
+# TCP na porcie gry + control-port-offset. control-secret MUSI byc IDENTYCZNY jak w config.yml
+# pluginu proxy (mban-plugin-bungeecord) - inaczej gniazdo odrzuci polaczenie.
+control-port-offset: 2000
+control-secret: 'zmien-to-haslo'
