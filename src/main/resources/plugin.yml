@@ -1,0 +1,12 @@
+name: BackendManager
+main: com.dziubek.backendmanager.BackendManagerPlugin
+version: 1.0.0
+api-version: '1.21'
+author: Dziubek
+description: >
+  Plugin Paper instalowany na KAZDYM serwerze backendowym - odbiera polecenia od proxy
+  (mban-plugin-bungeecord, kanal "banmanager:control") i realnie je wykonuje: VANISH_ON/OFF
+  naprawde chowa gracza przed wszystkimi (hidePlayer) poza graczami z uprawnieniem
+  "admin.wholeserver", a SHUTDOWN naprawde wylacza ten serwer (getServer/Bukkit.shutdown()).
+  Bez tego pluginu /vanish i /shutdown na proxy dzialaja tylko "kosmetycznie" (listy proxy,
+  blokada/przekierowanie) - z nim dzialaja naprawde.
